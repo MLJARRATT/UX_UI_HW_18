@@ -1,0 +1,77 @@
+.logo{
+ position: fixed; 
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif; 
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul#navbar li {
+  float: right;
+
+}
+
+ul#navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul#navbar li a:hover {
+  color: blue;
+}
+
+.heroImg { 
+  height: 600px;
+  padding: 25px;
+  float: left;
+}
+
+.content {
+  width: 500px;
+  margin: auto;
+  font-family: 'Karla', sans-serif;
+}
+
+p {
+  font-family: "Karla", sans-serif;
+}
+
+button {
+  font-family: 'Kalra', sans-serif;
+}
+
+.fa {
+  display:table; margin: 0 auto;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #e73eb4;
+  color: white; 
+}
