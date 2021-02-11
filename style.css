@@ -1,9 +1,14 @@
-.logo{
- position: fixed; 
+.bg {  
+  position: absolute;
+  right: 65%; 
+  width: 50%; 
+  height: 100%;
+  background-image: url("images/picture1.png");
+  background-position: 0 0; 
+  background-repeat:no-repeat; 
+  background-size: cover;
 }
-
 #navbar {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   font-family: 'Karla', sans-serif; 
@@ -13,45 +18,73 @@
   width: 100%;
 }
 
-ul#navbar li {
+div#navbar a {
+  display: inline;
   float: right;
-
-}
-
-ul#navbar li a {
-  display: block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-ul#navbar li a:hover {
+div#navbar a:hover {
   color: blue;
 }
 
+/* .logo{
+  position: absolute; 
+  
+ } */
+
 .heroImg { 
-  height: 600px;
-  padding: 25px;
-  float: left;
+  max-width: 100%;
+  height: auto;
+
 }
 
-.content {
-  width: 500px;
-  margin: auto;
-  font-family: 'Karla', sans-serif;
-}
-
-p {
+.welcome {
   font-family: "Karla", sans-serif;
+  text-align: center;
+  font-weight: 100;
+  font-size: xx-large;
+  line-height: 2;
+  
 }
 
 button {
   font-family: 'Kalra', sans-serif;
 }
 
-.fa {
-  display:table; margin: 0 auto;
+.site-footer {
+	text-align: center;
+	margin: 0px 0;
+	padding: 0px 0;
+}
+
+#social-wrapper {
+	text-align: center;
+}
+
+.social-wrapper {
+	text-align: center;
+}
+
+.social-wrapper ul li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.fa-linkedin:hover {
+    opacity: 1.0;
+}
+
+.fa-instagram:hover{
+  opacity: 1.0;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
   padding: 20px;
   font-size: 30px;
   width: 30px;
@@ -59,19 +92,94 @@ button {
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
-  
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
 }
 
 .fa-instagram {
   background: #e73eb4;
   color: white; 
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
+
+.footer-nav p {
+	text-align: center;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.main,
+.footer {
+  color: black;
+  padding: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+}
+h1{
+  font-family: 'Karla', sans-serif;
+}
+
+.research{
+  vertical-align: middle;
+  border: 15px  black;
+  padding: 50px;
+  margin: 20px;
+}
+
+.span{
+  font-family: 'Karla', sans-serif;
+  vertical-align: 175px;
+  font-size:x-large;
+}
+
+.span{
+  font-family: 'Karla', sans-serif;
+  vertical-align: 175px;
+  font-size:x-large;
+}
+
+.span{
+  font-family: 'Karla', sans-serif;
+  vertical-align: 175px;
+  font-size:x-large;
+}
+
+.item1{
+  grid-area:auto;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: mobile website ;
+}
+
+.item2{
+  grid-area:span;
+}
+
+@media only screen and (max-width: 6000{
+  grid-template-rows: 300px;
+
+})
+
+
+
+
+
+
+
